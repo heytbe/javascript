@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang=tr-TR>
+<head>
+    <meta charset="UTF-8">
+    <title>Ana Sayfa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="tumsayfaalani">
+    <div class="gorevler">
+        <span class="baslik" style="background: cornflowerblue">Görevler</span>
+        <div class="gorevlerdivi">
+            <div class="input">
+                <form action="" method="post">
+                    <input type="text" name="gorev" placeholder="Görev Yazın" autocomplete="off" class="gorevinput">
+                    <button type="submit" class="goreveklebtn">Ekle</button>
+                </form>
+            </div>
+<!--            <div class="gorevliste">-->
+<!--                <div class="gorevdivi">-->
+<!--                <input type="checkbox" name="gorev" id="gorev">-->
+<!--                <label for="gorev">Gorev 1</label>-->
+<!--                </div>-->
+<!--                <div class="islemlerdivi">-->
+<!--                    <button class="gorevduzenle">D</button>-->
+<!--                    <button class="gorevsil">S</button>-->
+<!--                </div>-->
+<!--            </div>-->
+        </div>
+    </div>
+    <div class="notlar">
+        <span class="baslik">Notlar</span>
+        <div class="notlardivi">
+            <div class="notadd">
+                <span>+<p>Not Ekle</p></span>
+            </div>
+<!--            <div class="notbox">-->
+<!--                <span class="baslik">${not.notbaslik}</span>-->
+<!--                <p>${not.not}</p>-->
+<!--                <div class="footer">${not.tarihsaat}</div>-->
+<!--                <div class="islemler" style="display: none;">-->
+<!--                    <div class="buttonlar">-->
+<!--                        <button>Düzenle</button>-->
+<!--                        <button index="${notlistesi.length - 1}" class="notsilbtn">Sil</button>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+        </div>
+    </div>
+    <div class="noteklemodal">
+        <div class="form">
+            <span class="baslik">Not Ekle</span>
+            <form action="" method="post">
+                <input type="text" class="notekleinput" name="notbaslik" placeholder="Not Başlık">
+                <textarea name="not" id="notekletextarea" cols="30" rows="10"></textarea>
+                <div class="btn">
+                    <button class="noteklebtn" type="submit">Ekle</button>
+                    <button class="modalkapat">Kapat</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+<script src="gorevler.js"></script>
+</body>
+</html>

@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #fff;
+    height: 100%;
+}
+
+.tumsayfaalani{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    border: none;
+    outline: none;
+}
+
+.gorevler{
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    height: 100vh;
+    border: none;
+    outline: none;
+    border-right: thin solid #000;
+}
+
+.notlar{
+    position: relative;
+    display: inline-block;
+    width: calc(100% - 300px);
+    height: auto;
+    border: none;
+    outline: none;
+}
+
+.baslik,.footer{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 35px;
+    border: none;
+    outline: none;
+    background-color: lightgray;
+    vertical-align: middle;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 35px;
+    overflow: hidden;
+}
+
+.input{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    border: none;
+    outline: none;
+    overflow: hidden;
+}
+
+form{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: auto;
+    border: none;
+    outline: none;
+    overflow: hidden;
+}
+
+form input{
+    width: 75%;
+    padding: 5px;
+    height: 35px;
+    border-radius: 0;
+}
+
+.form input:active{
+    border-radius: 0;
+}
+
+form button{
+    width: 25%;
+    height: 35px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    background-color: indigo;
+    color: #fff;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: rgba(75,0,130,0.6);
+}
+
+.gorevliste{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: auto;
+    border: none;
+    outline: none;
+    border-bottom: thin solid rgba(0,0,0,0.2);
+    padding: 10px;
+}
+
+.gorevliste label{
+    margin-left: 15px;
+    margin-top: -2px;
+}
+
+.gorevliste:hover,.active{
+    background-color: rgba(0,0,0,0.2);
+}
+
+.islemlerdivi button{
+    cursor: pointer;
+    padding: 5px 8px 5px 8px;
+    border-radius: 5px;
+}
+
+.islemlerdivi button:nth-child(1){
+    background: #a44a5c;
+    color: #fff;
+}
+
+.islemlerdivi button:nth-child(2){
+    background: chocolate;
+    color: #fff;
+}
+
+.notlardivi{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    border: none;
+    outline: none;
+}
+
+.notadd,.notbox{
+    position: relative;
+    display: inline-block;
+    width: 15%;
+    height: 250px;
+    border: thin solid rgba(0,0,0,0.2);
+    text-align: center;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: background-color 0.2s ease;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.notadd{
+    cursor: pointer;
+}
+
+.notadd span{
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.notadd span p{
+    display: block;
+    font-size: 20px;
+}
+
+.notadd:hover{
+    background-color:  rgba(0,0,0,0.2);
+}
+
+.notbox p{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: calc(100% - 70px);
+    overflow: hidden;
+    padding: 5px;
+    text-align: left;
+}
+
+.notbox .islemler{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    text-align: center;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.notbox .islemler .buttonlar{
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.notbox .islemler .buttonlar button{
+    position: relative;
+    display: inline-block;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+    font-width: 600;
+    cursor: pointer;
+}
+
+.notbox .islemler .buttonlar button:nth-child(1){
+    background-color: cornflowerblue;
+}
+
+.notbox .islemler .buttonlar button:nth-child(1):hover{
+    background-color: #8293bd;
+}
+
+.notbox .islemler .buttonlar button:nth-child(2){
+    background-color: darkred;
+    color: #fff;
+}
+
+.notbox .islemler .buttonlar button:nth-child(2):hover{
+    background-color: #c73a3a;
+}
+
+.noteklemodal{
+    position: absolute;
+    display: none;
+    width: 300px;
+    height: auto;
+    border: none;
+    outline: none;
+    text-align: center;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: darkgray;
+    padding: 5px;
+}
+
+.form{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    text-align: center;
+}
+
+.form form{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: auto;
+    border: none;
+    outline: none;
+    overflow: hidden;
+}
+
+.form form input,.form form textarea{
+    width: 100% !important;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.btn{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
